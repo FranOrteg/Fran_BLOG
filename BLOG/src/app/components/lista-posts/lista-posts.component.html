@@ -1,1 +1,17 @@
-<p>lista-posts works!</p>
+<div class="post">
+    <div class="card mb-4" style="max-width: 1004px;" *ngFor="let post of arrPosts">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <img [src]="post.imagen" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h3 class="card-title">{{post.titulo}}</h3>
+                    <p class="card-text">{{post.texto}}</p>
+                    <p class="card-text"><small class="text-muted">{{post.autor}} Fecha {{post.fecha}}</small></p>
+                    <p class="card-text">{{post.categoria}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
