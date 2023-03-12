@@ -18,4 +18,12 @@ export class ListaPostsComponent {
   ngOnInit() {
     this.arrPosts = this.postsService.getAll()
   }
+
+  onChange($event: any) {
+    if ($event.target.value === 'Todos') {
+      this.arrPosts = this.postsService.getAll()
+    } else {
+      this.arrPosts = this.postsService.getByCategoria($event.target.value)
+    }
+  }
 }

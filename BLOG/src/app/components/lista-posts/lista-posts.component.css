@@ -14,3 +14,9 @@ h3 {
 .card {
     margin: 0 auto;
 }
+
+.selector {
+    padding: 20px 0px;
+    max-width: 300px;
+    margin: 0 auto;
+}

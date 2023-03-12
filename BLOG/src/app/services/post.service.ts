@@ -13,4 +13,16 @@ export class PostService {
   getAll(): Post[] {
     return POSTS
   }
+
+  getByCategoria(pCategoria: string): Post[] {
+    const listaCategoria = [];
+
+    for (let posts of POSTS) {
+      if (posts.categoria === pCategoria) {
+        listaCategoria.push(posts)
+      }
+    }
+    return listaCategoria
+  }
+
 }

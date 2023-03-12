@@ -1,4 +1,12 @@
 <div class="post">
+    <div class="selector">
+        <select class="form-select" (change)="onChange($event)">
+            <option value="Todos">Todos Los Posts</option>
+            <option value="Snowboard">Snowboard</option>
+            <option value="Centros de Nieve">Centros de Nieve</option>
+            <option value="Material Snowboard">Material Snowboard</option>
+        </select>
+    </div>
     <div class="card mb-4" style="max-width: 1004px;" *ngFor="let post of arrPosts">
         <div class="row g-0">
             <div class="col-md-6">
