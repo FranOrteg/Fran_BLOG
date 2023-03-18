@@ -1,1 +1,27 @@
-<router-outlet></router-outlet>
+<header>
+    <nav>
+        <div>
+            <ul class="enlaces">
+                <li>
+                    <i class="fa-solid fa-person-snowboarding"></i>
+                    <a [routerLink]="['/posts']">Posts</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-signs-post"></i>
+                    <a [routerLink]="['/new']">Nuevo Posts</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-teamspeak"></i>
+                    <a [routerLink]="['/team']">Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="row">
+        <div class="col-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</main>
