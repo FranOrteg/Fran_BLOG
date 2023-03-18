@@ -1,13 +1,11 @@
 <div class="post">
-    <div class="selector">
-        <select class="form-select" (change)="onChange($event)">
-            <option value="Todos">Todos Los Posts</option>
-            <option value="Snowboard">Snowboard</option>
-            <option value="Centros de Nieve">Centros de Nieve</option>
-            <option value="Material Snowboard">Material Snowboard</option>
-        </select>
+    <div class="botones">
+        <button (click)="onChange($event)" value="Todos">Todos Los Posts</button>
+        <button (click)="onChange($event)" value="Snowboard">Snowboard</button>
+        <button (click)="onChange($event)" value="Centros de Nieve">Centros de Nieve</button>
+        <button (click)="onChange($event)" value="Material Snowboard">Material Snowboard</button>
     </div>
-    <div class="card mb-4" style="max-width: 1004px;" *ngFor="let post of arrPosts">
+    <div class="card mb-4" style="max-width: 1004px" *ngFor="let post of arrPosts">
         <div class="row g-0">
             <div class="col-md-6">
                 <img [src]="post.imagen" class="img-fluid rounded-start" alt="...">
@@ -22,10 +20,13 @@
             </div>
         </div>
     </div>
-    <div class="botones">
-        <button (click)="onChange($event)" value="Todos">Todos Los Posts</button>
-        <button (click)="onChange($event)" value="Snowboard">Snowboard</button>
-        <button (click)="onChange($event)" value="Centros de Nieve">Centros de Nieve</button>
-        <button (click)="onChange($event)" value="Material Snowboard">Material Snowboard</button>
+    <div class="selector">
+        <select class="form-select" (change)="onChange($event)">
+            <option value="Todos">Todos Los Posts</option>
+            <option value="Snowboard">Snowboard</option>
+            <option value="Centros de Nieve">Centros de Nieve</option>
+            <option value="Material Snowboard">Material Snowboard</option>
+        </select>
     </div>
+
 </div>
