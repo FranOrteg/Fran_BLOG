@@ -25,4 +25,9 @@ export class PostService {
     return listaCategoria
   }
 
+  create(pPost: any): Post[] {
+    POSTS.push(pPost)
+    console.log(pPost);
+    return POSTS
+  }
 }

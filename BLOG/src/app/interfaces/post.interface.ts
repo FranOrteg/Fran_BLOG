@@ -4,6 +4,5 @@ export interface Post {
     autor: string,
     imagen: string,
     fecha: string,
-    categoria: string,
-    id_post: number
+    categoria: string
 }

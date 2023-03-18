@@ -6,18 +6,16 @@ export const POSTS: Post[] = [
         titulo: '5 Consejos para iniciarse en el Snowboard',
         texto: '¿Empiezas con el snowboard? Estas en el sitio adecuado. Sin descubrirte nada nuevo, te listamos 5 cosas a tener en cuenta para que centres toda tu antención en aprender a surfear.',
         autor: 'Fran Ortega',
-        imagen: '/assets/images/snowboard-113784_640.jpg',
+        imagen: '/assets/images/galeria-cerler-81.jpg',
         fecha: '11-03-23',
         categoria: 'Snowboard',
-        id_post: 1
     },
     {
         titulo: 'Temporada 2022-2023: Apertura de pistas en España, Andorra y Francia', texto: 'El invierno está a la vuelta de la esquina. Nos parece mentira porque en muchos lugares de la península estamos por encima de los 25 grados y llevamos puestas aun las sandalias. Pero sabemos que, antes o después, terminará el veranillo de San Miguel o veroño y llegará el frío.  No sabemos si será la próxima semana o tal vez la siguiente, pero lo que si sabemos es que winter is coming.',
         autor: 'Fran Ortega',
-        imagen: '/assets/images/galeria-cerler-81.jpg',
+        imagen: '/assets/images/IMG_0047.jpg',
         fecha: '11-03-23',
         categoria: 'Centros de Nieve',
-        id_post: 2
     },
     {
         titulo: '3 Consejos para elegir la mejor bota de snowboard',
@@ -26,7 +24,6 @@ export const POSTS: Post[] = [
         imagen: '/assets/images/botas-snowboard-nike-tecnologia-led.jpg',
         fecha: '11-03-23',
         categoria: 'Material Snowboard',
-        id_post: 3
     },
     {
         titulo: 'Mantenimiento de una tabla de snowboard',
@@ -35,7 +32,6 @@ export const POSTS: Post[] = [
         imagen: '/assets/images/snows.jpg',
         fecha: '11-03-23',
         categoria: 'Material Snowboard',
-        id_post: 4
     },
     {
         titulo: 'Diferencias entre snowboard Freestyle y Freeride',
@@ -44,7 +40,6 @@ export const POSTS: Post[] = [
         imagen: '/assets/images/freestyle.jpeg',
         fecha: '11-03-23',
         categoria: 'Snowboard',
-        id_post: 5
     },
     {
         titulo: 'Snowzone Xanadu',
@@ -53,7 +48,6 @@ export const POSTS: Post[] = [
         imagen: '/assets/images/snozone-disfruta-x2.jpg',
         fecha: '11-03-23',
         categoria: 'Centros de Nieve',
-        id_post: 6
     },
     {
         titulo: 'Hacer un backflip con snowboard. Tutorial',
@@ -62,7 +56,6 @@ export const POSTS: Post[] = [
         imagen: '/assets/images/backflip.jpg',
         fecha: '11-03-23',
         categoria: 'Snowboard',
-        id_post: 7
     },
     {
         titulo: 'Viaje Alpes, Avoriaz',
@@ -71,7 +64,6 @@ export const POSTS: Post[] = [
         imagen: '/assets/images/avoriaz_1.jpg',
         fecha: '11-03-23',
         categoria: 'Centros de Nieve',
-        id_post: 8
     },
 ]
 

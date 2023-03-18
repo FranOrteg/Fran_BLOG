@@ -1,5 +1,5 @@
-img {
-    border-radius: 10px;
+body {
+    background-color: #eee;
 }
 
 h3 {
@@ -19,4 +19,62 @@ h3 {
     padding: 20px 0px;
     max-width: 300px;
     margin: 0 auto;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+button {
+    background: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    color: chocolate;
+    position: relative;
+    font-weight: bold;
+    border-radius: 12px;
+
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,
+            chocolate, blue, chocolate, blue,
+            chocolate, blue, chocolate, blue);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 30s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.form-select {
+    color: chocolate;
+    font-weight: bold;
+    border-radius: 12px;
+    border-color: chocolate;
 }
