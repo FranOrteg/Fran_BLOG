@@ -7,7 +7,12 @@ import { Post } from '../interfaces/post.interface';
 })
 export class PostService {
 
-  constructor() { }
+  constructor() {
+    const postguardados = localStorage.getItem('posts');
+    if (postguardados) {
+      POSTS.push(...JSON.parse(postguardados));
+    }
+  }
 
 
   getAll(): Post[] {
@@ -28,6 +33,7 @@ export class PostService {
   create(pPost: any): Post[] {
     POSTS.push(pPost)
     console.log(pPost);
+    localStorage.setItem('posts', JSON.stringify(POSTS))
     return POSTS
   }
 }
