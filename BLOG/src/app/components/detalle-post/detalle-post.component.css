@@ -1,0 +1,17 @@
+.detalle {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+h4 {
+    color: #3572ae;
+}
+
+.card-img-top {
+    transition: transform 0.5s;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
