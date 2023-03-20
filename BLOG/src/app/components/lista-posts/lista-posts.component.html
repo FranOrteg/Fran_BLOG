@@ -5,7 +5,7 @@
         <button (click)="onChange($event)" value="Centros de Nieve">Centros de Nieve</button>
         <button (click)="onChange($event)" value="Material Snowboard">Material Snowboard</button>
     </div>
-    <div class="card mb-4" style="max-width: 1004px" *ngFor="let post of arrPosts">
+    <div [routerLink]="['/posts', post.id]" class="card mb-4" style="max-width: 1004px" *ngFor="let post of arrPosts">
         <div class="row g-0">
             <div class="col-md-6">
                 <img [src]="post.imagen" class="img-fluid rounded-start" alt="...">
