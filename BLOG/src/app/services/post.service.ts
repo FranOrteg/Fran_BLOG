@@ -14,7 +14,6 @@ export class PostService {
     }
   }
 
-
   getAll(): Post[] {
     return POSTS
   }
@@ -36,4 +35,5 @@ export class PostService {
     localStorage.setItem('posts', JSON.stringify(POSTS))
     return POSTS
   }
+
 }

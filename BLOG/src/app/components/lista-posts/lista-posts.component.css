@@ -5,6 +5,11 @@
 
 .card {
     margin: 0 auto;
+    border: 1px solid #24303c;
+}
+
+.card h3 {
+    color: #3572ae;
 }
 
 .selector {
@@ -27,7 +32,7 @@ button {
     cursor: pointer;
     border: none;
     padding: 10px 20px;
-    color: chocolate;
+    color: #24303c;
     position: relative;
     font-weight: bold;
     border-radius: 12px;
@@ -66,8 +71,8 @@ button::before {
 }
 
 .form-select {
-    color: chocolate;
+    color: #24303c;
     font-weight: bold;
     border-radius: 12px;
-    border-color: chocolate;
+    border-color: #24303c;
 }
