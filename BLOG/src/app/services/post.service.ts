@@ -41,7 +41,7 @@ export class PostService {
   }
 
   getById(postId: number): Post | null {
-    for (let post of POSTS) {
+    for (let post of this.posts) {
       if (post.id === postId) {
         console.log(post)
         return post
@@ -49,6 +49,5 @@ export class PostService {
     }
     return null
   }
-
 
 }
